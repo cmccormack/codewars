@@ -19,7 +19,7 @@ Here's an example.
     is_accepted = a.read_commands(["1", "0", "0", "1", "0"])
 ```
 
-We make these transitions based on the input of ```python["1", "0", "0", "1", "0"]```,
+We make these transitions based on the input of ```["1", "0", "0", "1", "0"]```,
 
     1 q1 -> q2
     0 q2 -> q3
@@ -29,7 +29,7 @@ We make these transitions based on the input of ```python["1", "0", "0", "1", "0
 
 We end in q3, which is not our accept state, so return false.
 
-The input of ```python["1", "0", "0", "1", "0"]``` would cause us to return false, as we would end in q3.
+The input of ```["1", "0", "0", "1", "0"]``` would cause us to return false, as we would end in q3.
 
 I have started you off with the bare bones of the Automaton object.
 
