@@ -13,26 +13,29 @@ q3 moves to q2 when given a 0 or 1.
 Our automaton should return whether we end in our accepted state, or not (true/false.)
 
 Here's an example.
-
+```python
     a = Automaton()
     # Do anything you need to set up this automaton's states.
     is_accepted = a.read_commands(["1", "0", "0", "1", "0"])
+```
 
-We make these transitions based on the input of `["1", "0", "0", "1", "0"]`,
+We make these transitions based on the input of ```python["1", "0", "0", "1", "0"]```,
 
     1 q1 -> q2
     0 q2 -> q3
     0 q3 -> q2
     1 q2 -> q2
     0 q2 -> q3
+
 We end in q3, which is not our accept state, so return false.
 
-The input of `["1", "0", "0", "1", "0"]` would cause us to return false, as we would end in q3.
+The input of ```python["1", "0", "0", "1", "0"]``` would cause us to return false, as we would end in q3.
 
 I have started you off with the bare bones of the Automaton object.
 
 class Automaton(object):
 
+```python
     def __init__(self):
         self.states = []
     
@@ -42,7 +45,7 @@ class Automaton(object):
     my_automaton = Automaton()
     
     # Do anything necessary to set up your automaton's states, q1, q2, and q3.
-
+```
 You will have to design your state objects, and how your Automaton handles transitions. Also make sure you set up the three states, q1, q2, and q3, for the myAutomaton instance. The test fixtures will be calling against myAutomaton.
 
 As an aside, the automaton accepts an array of strings, rather than just numbers, or a number represented as a string, because the language an automaton can accept isn't confined to just numbers. An automaton should be able to accept any 'symbol.'
