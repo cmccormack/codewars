@@ -1,4 +1,4 @@
-README.md
+##Validate Sudoku with size `NxN`
 
 Given a Sudoku data structure with size `NxN, N > 0 and √N == integer`,
 write a method to validate if it has been filled out correctly.
